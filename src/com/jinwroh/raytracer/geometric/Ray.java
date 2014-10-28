@@ -1,5 +1,6 @@
 package com.jinwroh.raytracer.geometric;
 
+
 /**
  * The Ray represents the ray to be traced in the raytracing program. The
  * class is composed by a Point - representing the origin of the ray, 

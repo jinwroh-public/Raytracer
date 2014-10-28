@@ -8,15 +8,15 @@ package com.jinwroh.raytracer.geometric;
  * 
  * @author	Jin W. Roh
  * @version	1.0.0
- */
-final public class Point {
+ */ 
+public final class Point {
 
 	/**
 	 * The respective x, y, z coordinates of the point
 	 */
-	final private double x;
-	final private double y;
-	final private double z;
+	private final double x;
+	private final double y;
+	private final double z;
 	
 	
 	/**

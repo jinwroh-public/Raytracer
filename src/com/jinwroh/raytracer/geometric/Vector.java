@@ -145,7 +145,7 @@ public class Vector {
 	 * @return	the resulting new Vector from the scalar multiplication
 	 */
 	public static Vector multiply (Vector a, double scalar) {
-		return new Vector(a.getX()*scalar, a.getY()*scalar, a.getX()*scalar);
+		return new Vector(a.getX()*scalar, a.getY()*scalar, a.getZ()*scalar);
 	}
 	
 	
@@ -156,7 +156,7 @@ public class Vector {
 	 * @return	the resulting new Vector from the scalar division
 	 */
 	public static Vector divide (Vector a, double scalar) {
-		return new Vector(a.getX()/scalar, a.getY()/scalar, a.getX()/scalar);
+		return new Vector(a.getX()/scalar, a.getY()/scalar, a.getZ()/scalar);
 	}
 	
 	@Override
