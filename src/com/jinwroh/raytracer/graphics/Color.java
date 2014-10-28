@@ -21,6 +21,7 @@ public final class Color {
 	private final double g;
 	private final double b;
 	
+	
 	/**
 	 * Default Constructor: Constructs a Black Color.
 	 */
