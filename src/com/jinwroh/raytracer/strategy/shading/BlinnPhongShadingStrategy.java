@@ -34,7 +34,7 @@ public class BlinnPhongShadingStrategy implements ShadingStrategy {
 			
 			// Magical shading algorithm computation:
 			// In a nutshell, we compute the ambient, diffuse, and specular colors, and add them up
-			Vector l = light.getDirection();
+			Vector l = Vector.multiply(light.getDirection(), -1);
 			Vector n = localCalculations.normal;
 			Vector v = new Vector(localCalculations.point, viewRay.getOrigin());
 			
