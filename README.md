@@ -3,7 +3,6 @@ Raytracer
 
 v 1.0.0 Simple Raytracer
 
-Created to provide a sample code base to anyone that may be interested.
 
 #Introduction
 
