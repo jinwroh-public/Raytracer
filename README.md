@@ -3,6 +3,8 @@ Raytracer
 
 v 1.0.0 Simple Raytracer
 
+Created to provide a sample code base to anyone that may be interested.
+
 #Introduction
 
 Ray tracing is the technique in computer graphics to generate an image by - as the name implies - tracing rays. The traced paths of light through pixels in an image plane simulates the effects of its encounters with virtual objects.
