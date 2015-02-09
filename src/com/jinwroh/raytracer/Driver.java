@@ -31,10 +31,21 @@ public class Driver {
 		sphereProperties.ambientColorProperty = new Color(0.1, 0.1, 0.1);
 		sphereProperties.diffuseColorProperty = new Color(1.0, 0.0, 0.0);
 		sphereProperties.specularColorProperty = new Color(1.0, 1.0, 1.0);
-		sphereProperties.specularCoefficient = 50;
+		sphereProperties.specularCoefficient = 500;
 		ShadingStrategy sphereShadingStrategy = new BlinnPhongShadingStrategy();
 		Sphere sphere = new Sphere (sphereCenterPoint, sphereRadius, sphereProperties, sphereShadingStrategy);
 		
+		
+		// Create a test sphere
+		Point sphereCenterPoint2 = new Point(2, 2, 10);
+		double sphereRadius2 = 3.0;
+		Shape.Properties sphereProperties2 = new Shape.Properties();
+		sphereProperties2.ambientColorProperty = new Color(0.1, 0.1, 0.1);
+		sphereProperties2.diffuseColorProperty = new Color(1.0, 0.0, 0.0);
+		sphereProperties2.specularColorProperty = new Color(1.0, 1.0, 1.0);
+		sphereProperties2.specularCoefficient = 50;
+		ShadingStrategy sphereShadingStrategy2 = new BlinnPhongShadingStrategy();
+		Sphere sphere2 = new Sphere (sphereCenterPoint2, sphereRadius2, sphereProperties2, sphereShadingStrategy2);
 		
 		// Create a test light
 		Light light = new Light(new Vector (0.57735027, -0.57735027, 0.57735027), new Color (1, 1, 1));
@@ -44,6 +55,7 @@ public class Driver {
 		Scene sceneOne = new Scene();
 		sceneOne.addLight(light);
 		sceneOne.addShape(sphere);
+		//sceneOne.addShape(sphere2);
 		
 		// ACTION!
 		camera.shoot(sceneOne);
